@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bob's Bank Security Awareness Training Course">
+    <title>Bob's Bank: Course Overview</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #c9a227;
+            --light-color: #f7fafc;
+            --danger-color: #c53030;
+        }
+
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--light-color);
+        }
+        .content-wrapper {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .navbar-brand .bank-icon {
+            color: var(--accent-color);
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--light-color);
+            padding: 40px 0;
+        }
+        .course-content {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .learning-objectives {
+            background-color: var(--accent-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .module-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .module-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: var(--light-color);
+            border-radius: 5px;
+        }
+        .btn-start-course {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+        .btn-start-course:hover {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+        }
+        .user-email {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary-color);">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-university bank-icon"></i> Bob's Bank
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#courses"><i class="fas fa-book"></i> Courses</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle"></i> bob@bobsbank.net
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><span class="dropdown-item-text text-muted user-email">bob@bobsbank.net</span></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero text-center">
+            <div class="container">
+                <h1 class="display-5"><i class="fas fa-fish"></i> Phishing Awareness</h1>
+                <p class="lead mb-0">Module overview — Bob's Bank employee training</p>
+            </div>
+        </header>
+
+        <main class="container pb-5">
+            <div class="course-content">
+                <div class="learning-objectives">
+                    <h4><i class="fas fa-bullseye"></i> Learning Objectives</h4>
+                    <ul class="mb-0">
+                        <li>Recognize common phishing tactics used against banks and employees</li>
+                        <li>Verify sender identity before clicking links or opening attachments</li>
+                        <li>Report suspicious emails using Bob's Bank security procedures</li>
+                    </ul>
+                </div>
+
+                <h4><i class="fas fa-list"></i> Course Modules</h4>
+                <ul class="module-list">
+                    <li><i class="fas fa-check text-success"></i> 1. Introduction to Phishing</li>
+                    <li><i class="fas fa-check text-success"></i> 2. Email Red Flags</li>
+                    <li><i class="fas fa-play text-primary"></i> 3. Spear Phishing &amp; BEC Attacks</li>
+                    <li><i class="fas fa-circle text-muted"></i> 4. Reporting &amp; Response</li>
+                    <li><i class="fas fa-circle text-muted"></i> 5. Knowledge Check</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    <a href="index.html" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+                    <a href="#" class="btn btn-start-course"><i class="fas fa-play"></i> Continue Module 3</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="text-white py-3" style="background-color: var(--primary-color);">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Bob's Bank Security Awareness Training. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
